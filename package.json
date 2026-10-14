@@ -1,0 +1,27 @@
+{
+  "name": "smoothcomp-mcp-server",
+  "version": "1.0.0",
+  "description": "MCP server to find upcoming Smoothcomp competitions by location, with their categories and participation requirements (licences, memberships, medical certificate...)",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "smoothcomp-mcp-server": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc --watch"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.1",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "typescript": "^7.0.2"
+  }
+}
